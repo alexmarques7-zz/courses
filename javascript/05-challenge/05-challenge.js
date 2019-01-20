@@ -108,7 +108,8 @@ usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
 
-console.log( 'O livro Gênesis tem ' + book('Gênesis').quantidadePaginas + ' páginas!' );
+var bookName = 'Gênesis';
+console.log( 'O livro ' + bookName + ' tem ' + book( bookName ).quantidadePaginas + ' páginas!' );
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
@@ -116,7 +117,7 @@ a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
 
-console.log( 'O autor do livro Gênesis é ' + book('Gênesis').autor + '.' );
+console.log( 'O autor do livro ' + bookName + ' foi ' + book( bookName ).autor + '.' );
 
 
 /*
@@ -125,4 +126,4 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 
-console.log( 'O livro Gênesis foi publicado pela editora ' + book('Gênesis').editora + '.' );
+console.log( 'O livro ' + bookName + ' foi publicado pela editora ' + book(bookName).editora + '.' );
